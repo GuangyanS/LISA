@@ -122,6 +122,7 @@ def main(args):
         model_max_length=args.model_max_length,
         padding_side="right",
         use_fast=False,
+        legacy=True
     )
     tokenizer.pad_token = tokenizer.unk_token
     num_added_tokens = tokenizer.add_tokens("[SEG]")
